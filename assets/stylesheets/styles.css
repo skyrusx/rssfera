@@ -28,6 +28,22 @@ body {
   color: #75b08a;
 }
 
+.navbar .navbar-nav .dropdown-menu {
+  top: calc(100% + 5px);
+  border-radius: unset;
+  background: #198754;
+  border: unset;
+  z-index: 1;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: white;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #75b08a;
+}
+
 .header .realty {
   background-image: url("../images/main-bg.jpeg");
   height: calc(100vh - 90px);
@@ -144,6 +160,7 @@ body {
     background: white;
     border-radius: 50%;
     border: 3px solid #198754;
+    z-index: 10;
   }
   
   .bg-main-menu {
