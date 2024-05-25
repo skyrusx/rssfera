@@ -144,6 +144,80 @@ h1 {
   border-color: rgba(0, 0, 0, 0.175);
 }
 
+.team-members .member {
+  margin-bottom: 25px;
+}
+
+.team-members .member .card-image {
+  position: relative;
+}
+
+.team-members .member .card-image .team-info {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+}
+
+.team-members .member .card-image .team-info .name {
+  background-color: rgba(25, 135, 84, 0.5);
+  color: #fff;
+  padding: 10px;
+  width: 95%;
+}
+
+.team-members .member .card-image .team-info .skills {
+  list-style-type:  none;
+  margin: unset;
+  padding: 15px 15px 10px 15px;
+}
+
+.team-members .member .card-image .team-info .skills li {
+  display: inline-block;
+  padding: 5px 8px;
+  background: #198754;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 11px;
+  margin: 0 5px 5px 0;
+}
+
+.team-members .member .card-title {
+  margin: unset;
+}
+
+.team-members .member .card-contacts li {
+  /*background: rgba(25, 135, 84, 1);*/
+  padding: 8px 0;
+  position: relative;
+  padding-left: 40px;
+}
+
+.team-members .member .card-contacts li i {
+  background: rgba(25, 135, 84, 0.2);
+  text-align: center;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  line-height: 40px;
+  margin-right: 10px;
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  color: #198754;
+}
+
+.team-members .member .card-contacts li a,
+.team-members .member .card-contacts li a:focus {
+  color: #198754;
+  text-decoration: unset;
+}
+
+.team-members .member .card-contacts li a:hover {
+  color: #75b08a;
+}
+
 .content-info {
   background: url("../images/location-bg.png") no-repeat scroll 0 center transparent;
   
