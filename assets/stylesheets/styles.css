@@ -11,6 +11,10 @@ section {
   padding: 50px 0 25px 0;
 }
 
+h1 {
+  color: #198754;
+}
+
 .header .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
 }
