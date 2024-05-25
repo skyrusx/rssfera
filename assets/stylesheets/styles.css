@@ -1,4 +1,5 @@
 @import url("bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body {
   background-color: #75b08a;
@@ -48,6 +49,70 @@ body {
 
 .header .realty .all-objects .btn {
   font-size: 36px;
+}
+
+.content-info {
+  background: url("../images/location-bg.png") no-repeat scroll 0 center transparent;
+  
+  color: white;
+  padding: 5% 0 3%;
+  background-size: cover;
+  position: relative;
+}
+
+.content-info .container {
+  position: relative;
+}
+
+.content-info__bg {
+  background: rgba(117, 176, 138, .8);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-size: 100%;
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.content-info .title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.content-info a,
+.content-info a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.content-info a:hover {
+  color: #75b08a;
+}
+
+.footer-contact-info .info-item {
+  background: rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 8px 0;
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer-contact-info .info-item i {
+  background: rgba(0, 0, 0, .2);
+  text-align: center;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px 0 0 5px;
+  line-height: 40px;
+  margin-right: 10px;
+  display: inline-block;
+  left: 0;
+  position: absolute;
 }
 
 .footer {
