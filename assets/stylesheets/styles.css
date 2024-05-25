@@ -1,8 +1,14 @@
 @import url("bootstrap.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("fonts.css");
 
 body {
   background-color: #75b08a;
+  font-family: 'Roboto Regular';
+}
+
+section {
+  padding: 50px 0 25px 0;
 }
 
 .header .navbar-nav .nav-item .nav-link {
@@ -65,6 +71,73 @@ body {
 
 .header .realty .all-objects .btn {
   font-size: 36px;
+  border-radius: unset;
+}
+
+.subtitle {
+  color: grey;
+}
+
+.all-objects .object {
+  margin: 15px 0;
+}
+
+.all-objects .object .card-body {
+  padding-top: 1.5rem;
+}
+
+.all-objects .object .card-body .card-price {
+  color: white;
+  padding: 5px 20px;
+  background: #77b08b;
+  border-radius: 100vh;
+  color: #fff;
+  min-width: 150px;
+  position: absolute;
+  margin-top: -42px;
+}
+
+.all-objects .object .card-body .card-title a,
+.all-objects .object .card-body .card-title a:focus {
+  color: black;
+  text-decoration: unset;
+}
+
+.all-objects .object .card-body .card-title a:hover {
+  color: #75b08a;
+}
+
+.all-objects .object .card-body .card-location {
+  color: #aab2bd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.all-objects .object .card-footer {
+  display: flex;
+  padding: unset;
+}
+
+.all-objects .object .card-footer div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 50%;
+  padding: 0.5rem;
+  color: #75b08a;
+}
+
+.all-objects .object .card-footer div span {
+  color: #198754;
+}
+
+.all-objects .object .card-footer .square {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: rgba(0, 0, 0, 0.175);
 }
 
 .content-info {
@@ -146,6 +219,32 @@ body {
 .footer a:hover,
 .footer a:focus {
   color: #75b08a;
+}
+
+.pagination {
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.pagination .page-link {
+  box-shadow: unset;
+}
+
+.pagination .page-link,
+.pagination .page-link:focus {
+  color: #75b08a;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-link:hover {
+  color: white;
+  background: #75b08a;
+  border-color: #75b08a;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #77b08b;
 }
 
 @media screen and (min-width: 768px) {
