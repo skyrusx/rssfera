@@ -11,6 +11,10 @@ section {
   padding: 50px 0 25px 0;
 }
 
+.section-header {
+  margin-bottom: 25px;
+}
+
 h1 {
   color: #198754;
 }
@@ -83,7 +87,7 @@ h1 {
 }
 
 .all-objects .object {
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
 .all-objects .object .card-body {
