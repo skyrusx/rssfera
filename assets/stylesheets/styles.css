@@ -46,11 +46,12 @@ h1 {
 }
 
 .navbar .navbar-nav .dropdown-menu {
-  top: calc(100% + 5px);
+  top: 100%;
   border-radius: unset;
   background: #198754;
   border: unset;
   z-index: 1;
+  padding-top: 15px;
 }
 
 .navbar .navbar-nav .dropdown-menu .dropdown-item {
