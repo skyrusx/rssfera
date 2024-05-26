@@ -9,6 +9,8 @@ body {
 
 section {
   padding: 50px 0 25px 0;
+  position: relative;
+  position: relative;
 }
 
 .section-header {
@@ -31,14 +33,15 @@ h1 {
   align-items: center;
 }
 
-.navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link:focus {
   color: #fff;
   font-size: 1.1em;
   padding: 0.5em 1em;
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:focus {
+.navbar .navbar-nav .active .nav-link {
   color: #75b08a;
 }
 
@@ -58,13 +61,46 @@ h1 {
   background-color: #75b08a;
 }
 
-.header .realty {
-  background-image: url("../images/main-bg.jpeg");
-  height: calc(100vh - 90px);
+.header .realty,
+.header .title {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: -31px;
+}
+
+.header .realty {
+  background-image: url("../images/main-bg.jpeg");
+  height: calc(100vh - 90px);
+}
+
+.header .title {
+  background-image: url("../images/contacts.png");
+  height: 300px;
+  position: relative;
+}
+
+.header .title .title-bg {
+  background: rgba(117, 176, 138, .8);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-size: 100%;
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.header .title h1 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px 0;
+  color: white;
 }
 
 .header .realty .all-objects {
@@ -226,7 +262,7 @@ h1 {
   background: url("../images/location-bg.png") no-repeat scroll 0 center transparent;
   
   color: white;
-  padding: 5% 0 3%;
+  padding: 7% 0 3%;
   background-size: cover;
   position: relative;
 }
@@ -329,6 +365,125 @@ h1 {
   background-color: #77b08b;
 }
 
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item a:focus {
+  color: #198754;
+  text-decoration: unset;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+  color: #75b08a;
+}
+
+.contacts-page .contact-info {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.contacts-page .contact-info ul,
+.contacts-page .contact-info li {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contacts-page .contact-info .box:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.contacts-page .contact-info h5 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contacts-page .contact-info .box .title {
+  margin-bottom: 8px;
+}
+
+.contacts-page .contact-info .box .box-social {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contacts-page .contact-info .box .box-social .item {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #75b08a;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-page .contact-info .box .box-social .item:hover {
+  background-color: rgba(117, 176, 138, .5);
+  border-color: #75b08a;
+}
+
+.contacts-page .text-1 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.contacts-page .text-variant-1 {
+  color: #5c6368;
+}
+
+.contacts-page .text-variant-1 span,
+.contacts-page .text-variant-1 a {
+  display: block;
+}
+
+.contacts-page .text-variant-1 a,
+.contacts-page .text-variant-1 a:focus {
+  color: #5c6368;
+  text-decoration: unset;
+}
+
+.contacts-page .text-variant-1 a:hover {
+  color: #198754;
+}
+
+.contacts-page .map {
+  margin-top: 25px;
+}
+
+.contacts-page .explore {
+  position: relative;
+  padding: unset;
+}
+
+.contacts-page .explore-wrapper {
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #198754;
+  color: #d3d4d5;
+  width: 100%;
+}
+
+.contacts-page .explore-wrapper h1 {
+  color: white;
+}
+
+.contacts-page .explore-wrapper .explore-link a {
+  border-radius: unset;
+  padding: 15px 40px;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-brand img {
     width: 100px;
@@ -355,5 +510,29 @@ h1 {
   
   .navbar-collapse {
     z-index: 2;
+  }
+  
+  .contacts-page .explore-wrapper {
+    position: absolute;
+    bottom: -110px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contacts-page .map {
+    margin-bottom: -32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts-page .explore-wrapper {
+    padding: 20px;
+    text-align: center;
+    margin: -7px 0 -25px 0;
+  }
+  
+  .bg-main-menu {
+    display: none;
   }
 }
