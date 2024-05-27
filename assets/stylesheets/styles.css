@@ -139,7 +139,8 @@ img {
   margin-bottom: 15px;
 }
 
-.all-objects .object .card-body {
+.all-objects .object .card-body,
+.my-objects .object .card-body {
   padding-top: 1.5rem;
 }
 
@@ -152,10 +153,6 @@ img {
   min-width: 150px;
   position: absolute;
   margin-top: -42px;
-}
-
-.my-objects .object .card-body .card-price {
-  margin-top: -35px;
 }
 
 .object .card-body .card-title a,
@@ -609,6 +606,7 @@ img {
   display: inline-block;
   color: #198754;
   min-width: 190px;
+  margin-right: 10px;
 }
 
 .team-page .details-wrapper .contact-list .info-item i {
