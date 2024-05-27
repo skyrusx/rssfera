@@ -21,6 +21,11 @@ h1 {
   color: #198754;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
 }
@@ -76,7 +81,6 @@ h1 {
 }
 
 .header .title {
-  background-image: url("../images/contacts.png");
   height: 300px;
   position: relative;
 }
@@ -102,6 +106,14 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 25px 0;
   color: white;
+}
+
+.header .title-contacts {
+  background-image: url("../images/contacts-bg.png");
+}
+
+.header .title-team {
+  background-image: url("../images/team-bg.png");
 }
 
 .header .realty .all-objects {
@@ -131,7 +143,7 @@ h1 {
   padding-top: 1.5rem;
 }
 
-.all-objects .object .card-body .card-price {
+.object .card-body .card-price {
   color: white;
   padding: 5px 20px;
   background: #77b08b;
@@ -142,17 +154,21 @@ h1 {
   margin-top: -42px;
 }
 
-.all-objects .object .card-body .card-title a,
-.all-objects .object .card-body .card-title a:focus {
+.my-objects .object .card-body .card-price {
+  margin-top: -35px;
+}
+
+.object .card-body .card-title a,
+.object .card-body .card-title a:focus {
   color: black;
   text-decoration: unset;
 }
 
-.all-objects .object .card-body .card-title a:hover {
+.object .card-body .card-title a:hover {
   color: #75b08a;
 }
 
-.all-objects .object .card-body .card-location {
+.object .card-body .card-location {
   color: #aab2bd;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -161,12 +177,16 @@ h1 {
   -webkit-box-orient: vertical;
 }
 
-.all-objects .object .card-footer {
+.object .card-footer {
   display: flex;
   padding: unset;
 }
 
-.all-objects .object .card-footer div {
+.my-objects .object .card-footer {
+  font-size: 14px;
+}
+
+.object .card-footer div {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -175,11 +195,11 @@ h1 {
   color: #75b08a;
 }
 
-.all-objects .object .card-footer div span {
+.object .card-footer div span {
   color: #198754;
 }
 
-.all-objects .object .card-footer .square {
+.object .card-footer .square {
   border-left: 1px solid;
   border-right: 1px solid;
   border-color: rgba(0, 0, 0, 0.175);
@@ -485,12 +505,308 @@ h1 {
   padding: 15px 40px;
 }
 
+.team-page .details-wrapper,
+.team-page .feedback-form {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.team-page .my-objects {
+  padding: 24px 24px 50px 24px;
+  margin-bottom: 24px;
+}
+
+.team-page .details-wrapper .user-info__wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E3E3E3;
+  margin-bottom: 25px;
+}
+
+.team-page .details-wrapper .detail-user-info .rating {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.team-page .details-wrapper .detail-user-info .rating .rating-count i.bi-star-fill {
+  color: #FCAF3D;
+}
+
+.team-page .details-wrapper .detail-user-info .rating .rating-review {
+  color: #8A909A;
+}
+
+.team-page .details-wrapper .detail-user-info h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.team-page .details-wrapper .detail-user-info h3 i {
+  color: #198754;
+  font-size: 20px;
+}
+
+.team-page .details-wrapper .detail-user-info .role {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.team-page .details-wrapper .detail-user-info .role span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #198754;
+}
+
+.team-page .details-wrapper .detail-actions {
+  margin-bottom: 10px;
+}
+
+.team-page .details-wrapper .detail-actions a i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.team-page .details-wrapper .contact-list {
+  margin-bottom: 25px;
+}
+
+.team-page .details-wrapper .contact-list .info-item {
+  background: rgba(25, 135, 84, .2);
+  border-radius: 5px;
+  padding: 8px 10px 8px 40px;
+  position: relative;
+  display: inline-block;
+  color: #198754;
+  min-width: 190px;
+}
+
+.team-page .details-wrapper .contact-list .info-item i {
+  background: rgba(25, 135, 84, .2);
+  text-align: center;
+  width: 34px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px 0 0 5px;
+  line-height: 40px;
+  margin-right: 10px;
+  display: inline-block;
+  left: 0;
+  position: absolute;
+}
+
+.team-page .details-wrapper .contact-list .info-item a,
+.team-page .details-wrapper .contact-list .info-item a:focus {
+  color: #198754;
+  text-decoration: none;
+}
+
+.team-page .details-wrapper .contact-list .info-item a:hover {
+  color: #75b08a;
+}
+
+.team-page .review-card .customer-review {
+  margin: 0 0 24px;
+  padding: 15px;
+  border: 1px solid #f4f4f4;
+}
+
+.team-page .review-card .customer-review .customer-info {
+  margin-bottom: 15px;
+}
+
+.team-page .review-card .customer-review .customer-info,
+.team-page .review-card .customer-review .customer-info .customer-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.team-page .review-card .customer-review .customer-info .customer-name img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.team-page .review-card .customer-review .customer-info .customer-name h5 {
+  color: #0E0E46;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.team-page .review-card .customer-review .customer-info .customer-name p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.team-page .review-card .customer-review .customer-info .rating {
+  font-size: 14px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.team-page .review-card .customer-review .customer-info .rating .rating-count {
+  margin-right: 4px;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.team-page .review-card .customer-review .customer-info .rating .rating-count i {
+  margin-right: 3px;
+}
+
+i.bi-star-fill,
+i.bi-star-half {
+  color: #FCAF3D;
+}
+
+i.bi-star {
+  color: #E3E3E3;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.team-page .review-card .customer-review .customer-info .rating .rating-review {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8A909A;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.team-page .review-card .customer-review .customer-info .rating .rating-review span {
+  margin-right: 5px;
+}
+
+.team-page .review-card .customer-review .review-comment {
+  background: #F7F6FF;
+  border-radius: 5px;
+  margin: 0;
+  padding: 10px;
+}
+
+.team-page .review-card .customer-review .review-comment p {
+  font-size: 16px;
+  color: #8A909A;
+}
+
+.team-page .review-card .property-review h5 {
+  padding-bottom: 0 !important;
+  margin: 0 0 20px;
+}
+
+.review-form input:focus, .review-form textarea:focus,
+.message-form input:focus, .message-form textarea:focus, .message-form select:focus {
+  background-color: #F6F6F9;
+  outline: 0;
+  box-shadow: unset;
+}
+
+.review-form input, .review-form textarea,
+.message-form input, .message-form textarea {
+  margin: 0;
+  padding: 10px 15px;
+  background: #F6F6F9;
+  color: #0E0E46;
+  border: 1px solid #f4f4f4;
+  font-weight: normal;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  min-height: 45px;
+  font-size: 14px;
+}
+
+.message-form select.form-select {
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #F6F6F9;
+  color: #0E0E46;
+  border: 1px solid #f4f4f4;
+  font-weight: normal;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  min-height: 45px;
+  font-size: 14px;
+}
+
+.message-form .sidebar-card-title {
+  font-size: 20px;
+  border-bottom: 1px solid #E3E3E3;
+  margin: 0 0 20px;
+}
+
+.message-form .sidebar-card-title h5 {
+  margin: 0 0 20px;
+}
+
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
 
 .dropdown>.dropdown-toggle:active {
   pointer-events: none;
+}
+
+.accordion-button,
+.accordion-button:focus {
+  box-shadow: unset;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button.collapsed {
+  background-color: #75b08a;
+  color: white;
+}
+
+.accordion-body {
+  padding: 1.3rem 1.5rem;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #75b08a;
+}
+
+.nav-pills .nav-link {
+  color: #198754;
+}
+
+.nav-pills .nav-link:hover {
+  color: #75b08a;
+}
+
+.nav-pills .nav-link.active {
+  color: white;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #198754;
 }
 
 @media screen and (min-width: 768px) {
