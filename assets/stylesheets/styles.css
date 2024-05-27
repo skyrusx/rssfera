@@ -587,6 +587,7 @@ img {
 
 .team-page .details-wrapper .detail-actions {
   margin-bottom: 10px;
+  min-width: 260px;
 }
 
 .team-page .details-wrapper .detail-actions a i {
