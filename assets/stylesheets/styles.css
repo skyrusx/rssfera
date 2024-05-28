@@ -532,6 +532,15 @@ img {
   padding: 15px 40px;
 }
 
+.team-page .team-info {
+  margin-bottom: 42px;
+}
+
+.team-page .team-info h4 {
+  font-size: 18px;
+  margin: 0 0 24px;
+}
+
 .team-page .details-wrapper,
 .team-page .feedback-form {
   padding: 24px;
@@ -743,6 +752,42 @@ p:last-child {
 .team-page .review-card .property-review h5 {
   padding-bottom: 0 !important;
   margin: 0 0 20px;
+}
+
+.rea-area {
+  background: rgba(0, 0, 0, 0) url("../images/-bg.jpeg") no-repeat fixed center center / cover;
+  position: relative;
+  z-index: 0;
+  padding: 50px 0;
+}
+
+.rea-area h2 {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -1.6px;
+}
+
+.rea-area p {
+  font-size: 20px;
+}
+
+.bg-overlay::after {
+  background: -webkit-radial-gradient(50% 50%, #75b08a 0%, #198754 100%);
+  opacity: 0.95;
+  z-index: -1;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bg-overlay::after {
+  opacity: 0.95;
+  z-index: -1;
 }
 
 .review-form input:focus, .review-form textarea:focus,
