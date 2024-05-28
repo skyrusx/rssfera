@@ -799,6 +799,10 @@ p:last-child {
   pointer-events: none;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #75b08a;
+}
+
 .accordion-button,
 .accordion-button:focus {
   box-shadow: unset;
