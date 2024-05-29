@@ -510,12 +510,12 @@ img {
   margin-top: 25px;
 }
 
-.contacts-page .explore {
+.explore {
   position: relative;
   padding: unset;
 }
 
-.contacts-page .explore-wrapper {
+.explore-wrapper {
   align-items: center;
   padding: 40px 60px;
   background-color: #198754;
@@ -523,13 +523,17 @@ img {
   width: 100%;
 }
 
-.contacts-page .explore-wrapper h1 {
+.explore-wrapper h1 {
   color: white;
 }
 
-.contacts-page .explore-wrapper .explore-link a {
+.explore-wrapper .explore-link a {
   border-radius: unset;
   padding: 15px 40px;
+}
+
+.team-page {
+  padding: 50px 0 100px 0;
 }
 
 .team-page .team-info {
@@ -710,6 +714,10 @@ img {
 
 .team-page .review-card .customer-review .customer-info .rating .rating-count i {
   margin-right: 3px;
+}
+
+.team-page .explore-wrapper {
+  bottom: -180px;
 }
 
 .rating-count i.bi-star-fill,
@@ -915,7 +923,7 @@ p:last-child {
     z-index: 2;
   }
   
-  .contacts-page .explore-wrapper {
+  .explore-wrapper {
     position: absolute;
     bottom: -110px;
     z-index: 100;
@@ -929,7 +937,7 @@ p:last-child {
 }
 
 @media (max-width: 767px) {
-  .contacts-page .explore-wrapper {
+  .explore-wrapper {
     padding: 20px;
     text-align: center;
     margin: -7px 0 -25px 0;
