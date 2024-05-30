@@ -10,7 +10,10 @@ body {
 section {
   padding: 50px 0 25px 0;
   position: relative;
-  position: relative;
+}
+
+section:last-of-type {
+  padding: 50px 0;
 }
 
 .section-header {
@@ -118,6 +121,10 @@ img {
 
 .header .title-vacancy {
   background-image: url("../images/vacancy-bg.jpeg");
+}
+
+.header .title-partners {
+  background-image: url("../images/partners-bg.png");
 }
 
 .header .realty .all-objects {
@@ -537,7 +544,7 @@ img {
 }
 
 .team-page {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 100px 0 !important;
 }
 
 .team-page .team-info {
@@ -764,6 +771,67 @@ p:last-child {
 .team-page .review-card .property-review h5 {
   padding-bottom: 0 !important;
   margin: 0 0 20px;
+}
+
+.partners-page .partner-item {
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.partners-page .partner-item .partner-logo {
+  height: 100%;
+}
+
+.partners-page .partner-item .partner-logo,
+.partners-page .partner-item .partner-desc {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.partner-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo img {
+  height: auto;
+}
+
+.partners-page .partner-item p,
+.partners-page .partner-item ul li {
+  text-align: justify;
+  color: #6c757d;
+}
+
+.partners-page .partner-item h4 {
+  margin-top: 1rem;
+}
+
+.partners-page .partner-item .partner-logo {
+  background-color: #198754;
+}
+
+.partners-page .partner-item:nth-child(odd) .partner-logo {
+  order: 1;
+}
+
+.partners-page .partner-item:nth-child(odd) .partner-desc {
+  order: 2;
+}
+
+.partners-page .partner-item:nth-child(even) .partner-logo {
+  order: 2;
+}
+
+.partners-page .partner-item:nth-child(even) .partner-desc {
+  order: 1;
+}
+
+.partners-page .partner-item .partner-logo:hover {
+  background-color: #75b08a;
 }
 
 .rea-area {
