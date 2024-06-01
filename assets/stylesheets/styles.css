@@ -426,7 +426,7 @@ img {
 }
 
 .vacancy-page .vacancy-item .vacancy-item__info .work-note {
-  background-color: rgba(117, 176, 138, .5);
+  background-color: rgba(117, 176, 138, .2);
   color: #198754;
   padding: 4px 8px;
   border-radius: 8px;
@@ -436,6 +436,74 @@ img {
 
 .vacancy-page .vacancy-item .btn {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+}
+
+.vacancy-page .vacancy-detail p,
+.vacancy-page .vacancy-detail ul li {
+  color: #8A909A;
+}
+
+.vacancy-page .vacancy-detail h5 {
+  margin: 20px 0 10px 0;
+}
+
+.vacancy-page .vacancy-detail i {
+  color: #198754;
+}
+
+.vacancy-page .vacancy-detail .sidebar {
+  transition-duration: .5s !important;
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+  border-radius: 8px;
+  position: sticky;
+  top: 10px;
+}
+
+.vacancy-page .vacancy-detail .sidebar h5,
+.vacancy-page .vacancy-detail .sidebar .sidebar-info {
+  margin: unset;
+  padding: 24px;
+}
+
+.vacancy-page .vacancy-detail .sidebar .sidebar-info {
+  border-top: 1px solid #3c485826;
+}
+
+.vacancy-page .vacancy-detail .sidebar .sidebar-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.vacancy-page .vacancy-detail .sidebar .sidebar-info i {
+  font-size: 20px;
+  color: black;
+  margin-right: 16px;
+}
+
+.vacancy-page .vacancy-detail .sidebar .sidebar-info p {
+  color: black;
+  font-size: 18px;
+  margin: unset;
+}
+
+.vacancy-page .vacancy-detail .sidebar .sidebar-info span {
+  color: #198754;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+}
+
+.list-skills .skill-item {
+  display: inline-block;
+  background-color: rgba(117, 176, 138, .2);
+  color: #198754;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  margin-bottom: 8px;
 }
 
 .content-info {
@@ -964,7 +1032,7 @@ p:last-child {
   transform: translateY(-100px);
 }
 
-.partners-list a:hover .partner-item {
+.partners a:hover .partner-item {
   filter: unset;
   transform: unset;
 }
