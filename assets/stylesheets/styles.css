@@ -955,6 +955,20 @@ p:last-child {
   background-color: #75b08a;
 }
 
+.partners-list .col {
+  overflow: hidden;
+}
+
+.partners-list .partner-item {
+  filter: drop-shadow(0px 100px 0 #75b08a);
+  transform: translateY(-100px);
+}
+
+.partners-list a:hover .partner-item {
+  filter: unset;
+  transform: unset;
+}
+
 .rea-area {
   background: rgba(0, 0, 0, 0) url("../images/vacancy-bg.jpeg") no-repeat fixed center center / cover;
   position: relative;
