@@ -315,6 +315,129 @@ img {
   color: #75b08a;
 }
 
+.vacancy-page .vacancy-list {
+  margin-top: 50px;
+}
+
+.vacancy-page .vacancy-list .card-wrapper {
+  margin-bottom: 24px;
+}
+
+.vacancy-page .vacancy-list .card {
+  height: 100%;
+}
+
+.vacancy-page .vacancy-list .card:hover {
+  background-color: #0596690d;
+}
+
+.vacancy-page .vacancy-list .card-icon {
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+.vacancy-page .vacancy-list .card-icon i {
+  background-color: #0596690d;
+  padding: 15px 16px;
+  display: inline-block;
+  border-radius: 8px;
+  color: #198754;
+}
+
+.vacancy-page .vacancy-list .card:hover .card-icon i {
+  color: white;
+  background-color: #198754;
+  transition: background 1s ease;
+}
+
+.vacancy-page .vacancy-list .card-title {
+  font-size: 18px;
+}
+
+.vacancy-page .vacancy-list .card-text {
+  font-size: 14px;
+  color: #aab2bd;
+}
+
+.vacancy-page .vacancy-info {
+  /*padding-top: 30px;*/
+}
+
+.vacancy-page .vacancy-info img {
+  max-width: 440px;
+}
+
+.vacancy-page .vacancy-info h3 {
+  color: #198754;
+}
+
+.vacancy-page .vacancy-info i {
+  color: #198754;
+  margin-right: 5px;
+}
+
+.vacancy-page .vacancy-info ul li:nth-child(even) {
+  padding-left: 25px;
+  color: #aab2bd;
+  font-size: 14px;
+}
+
+.vacancy-page .vacancy-items {
+  margin-top: 32px;
+}
+
+.vacancy-page .vacancy-item {
+  padding: 24px;
+  transition-duration: .5s !important;
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.vacancy-page .vacancy-item:hover {
+  box-shadow: 0 0 25px #3c485826 !important;
+}
+
+.vacancy-page .vacancy-item:hover .btn {
+  color: white;
+  background-color: #198754;
+  transition-duration: .5s !important;
+}
+
+.vacancy-page .vacancy-item .vacancy-item__info a,
+.vacancy-page .vacancy-item .vacancy-item__info a:focus {
+  color: black;
+  text-decoration: unset;
+  font-size: 20px;
+}
+
+.vacancy-page .vacancy-item .vacancy-item__info a:hover {
+  color: #198754;
+}
+
+.vacancy-page .vacancy-item .vacancy-item__info p {
+  color: #aab2bd;
+}
+
+.vacancy-page .vacancy-item .vacancy-item__info .work-note {
+  background-color: rgba(117, 176, 138, .5);
+  color: #198754;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.vacancy-page .vacancy-item .btn {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+}
+
 .content-info {
   background: url("../images/location-bg.png") no-repeat scroll 0 center transparent;
   
@@ -963,6 +1086,12 @@ p:last-child {
 
 .carousel-indicators [data-bs-target] {
   background-color: #198754;
+}
+
+ul.list-none, ul.list-none li {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
