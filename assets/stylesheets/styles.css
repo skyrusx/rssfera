@@ -75,12 +75,10 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: -31px;
 }
 
 .header .realty {
   background-image: url("../images/main-bg.jpeg");
-  height: calc(100vh - 90px);
 }
 
 .header .title {
@@ -138,7 +136,6 @@ img {
 }
 
 .header .realty .all-objects .btn {
-  font-size: 36px;
   border-radius: unset;
 }
 
@@ -538,7 +535,6 @@ img {
 
 .content-info .title {
   font-size: 20px;
-  margin-bottom: 30px;
 }
 
 .content-info a,
@@ -1028,20 +1024,6 @@ p:last-child {
   background-color: #75b08a;
 }
 
-.partners-list .col {
-  overflow: hidden;
-}
-
-.partners-list .partner-item {
-  filter: drop-shadow(0px 100px 0 #75b08a);
-  transform: translateY(-100px);
-}
-
-.partners a:hover .partner-item {
-  filter: unset;
-  transform: unset;
-}
-
 .rea-area {
   background: rgba(0, 0, 0, 0) url("../images/vacancy-bg.jpeg") no-repeat fixed center center / cover;
   position: relative;
@@ -1122,14 +1104,6 @@ p:last-child {
 
 .message-form .sidebar-card-title h5 {
   margin: 0 0 20px;
-}
-
-.dropdown:hover>.dropdown-menu {
-  display: block;
-}
-
-.dropdown>.dropdown-toggle:active {
-  pointer-events: none;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -1220,9 +1194,74 @@ ul.list-none, ul.list-none li {
   .contacts-page .map {
     margin-bottom: -32px;
   }
+  
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+  }
+  
+  .header .realty,
+  .header .title {
+    margin-top: -31px;
+  }
+  
+  .header .realty {
+    height: calc(100vh - 90px);
+  }
+  
+  .header .realty .all-objects .btn {
+    font-size: 36px;
+  }
+  
+  .partners-list .partner-item {
+    overflow: hidden;
+  }
+  
+  .partners-list .partner-item img,
+  .partners-list .partner-item a:focus img {
+    filter: drop-shadow(0px 100px 0 #75b08a);
+    transform: translateY(-100px);
+  }
+  
+  .partners-list .partner-item a:hover img {
+    filter: unset;
+    transform: unset;
+  }
+  
+  .content-info .title {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
+  .header .navbar {
+    background-color: #198754;
+  }
+  
+  .navbar-brand {
+    padding: unset;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #198754;
+  }
+  
+  .navbar-brand img {
+    padding: 5px;
+    width: 60px;
+  }
+  
+  .navbar .navbar-nav {
+    align-items: start;
+  }
+  
+  .navbar .navbar-nav .dropdown-menu {
+    padding-top: unset;
+    margin-left: 15px;
+  }
+  
   .explore-wrapper {
     padding: 20px;
     text-align: center;
@@ -1232,4 +1271,55 @@ ul.list-none, ul.list-none li {
   .bg-main-menu {
     display: none;
   }
+  
+  .header .realty {
+    height: 300px;
+  }
+  
+  .header .realty .all-objects .btn {
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .object .card-footer {
+    font-size: 13px;
+  }
+  
+  .rea-area h2 {
+    font-size: 32px;
+  }
+  
+  .partners-list .partner-item img {
+    margin: 15px auto;
+    max-width: 150px;
+  }
+  
+  .content-info {
+    padding: 7% 0 7% 0;
+  }
+  
+  .content-info .title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .content-info .col-12:last-child .title {
+    margin-top: 15px;
+  }
 }
+
+
+
+
+@media (max-width: 575px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
