@@ -1419,6 +1419,25 @@ ul.list-none, ul.list-none li {
     transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
   }
+  
+  .vacancy-page .vacancy-info img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .vacancy-page .vacancy-item {
+    padding: 12px;
+    display: block;
+  }
+  
+  .vacancy-page .vacancy-detail .sidebar h5,
+  .vacancy-page .vacancy-detail .sidebar .sidebar-info {
+    padding: 12px;
+  }
+  
+  .breadcrumb .breadcrumb-item {
+    font-size: 12px;
+  }
 }
 
 
