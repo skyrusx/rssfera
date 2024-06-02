@@ -27,3 +27,50 @@
     font-family: "Roboto Thin";
     src: url("../fonts/Roboto-Thin.woff");
 }
+
+/* RobotoSlab */
+
+@font-face {
+    font-family: "RobotoSlab Black";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Black.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab Bold";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab ExtraBold";
+    src: url("../fonts/RobotoSlab/RobotoSlab-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab ExtraLight";
+    src: url("../fonts/RobotoSlab/RobotoSlab-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab Light";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Light.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab Medium";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Medium.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab Regular";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab SemiBold";
+    src: url("../fonts/RobotoSlab/RobotoSlab-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoSlab Thin";
+    src: url("../fonts/RobotoSlab/RobotoSlab-Thin.ttf");
+}
