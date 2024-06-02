@@ -16,6 +16,10 @@ section:last-of-type {
   padding: 50px 0;
 }
 
+section.contacts-page {
+  padding: 50px 0 25px 0;
+}
+
 .section-header {
   margin-bottom: 25px;
 }
@@ -27,6 +31,10 @@ h1 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+form {
+  margin-bottom: 24px;
 }
 
 .header .navbar-nav .nav-item .nav-link {
@@ -634,8 +642,12 @@ img {
 
 .contacts-page .contact-info {
   background-color: white;
-  padding: 30px;
-  border-radius: 16px;
+  padding: 24px;
+  border-radius: 8px;
+  
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+  margin-bottom: 24px;
 }
 
 .contacts-page .contact-info ul,
@@ -1306,6 +1318,22 @@ ul.list-none, ul.list-none li {
   
   .content-info .col-12:last-child .title {
     margin-top: 15px;
+  }
+  
+  .explore-wrapper h1 {
+    font-size: 22px;
+  }
+  
+  .explore-wrapper p {
+    font-size: 14px;
+  }
+  
+  .explore-link {
+    margin-top: 15px;
+  }
+  
+  .explore-wrapper .explore-link a {
+    padding: 8px 20px;
   }
 }
 
