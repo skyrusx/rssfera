@@ -20,6 +20,10 @@ section.contacts-page {
   padding: 50px 0 25px 0;
 }
 
+section.team-page {
+  padding: 50px 0 100px 0;
+}
+
 .section-header {
   margin-bottom: 25px;
 }
@@ -745,10 +749,6 @@ form {
   padding: 15px 40px;
 }
 
-.team-page {
-  padding: 50px 0 100px 0 !important;
-}
-
 .team-page .team-info {
   margin-bottom: 42px;
 }
@@ -762,11 +762,15 @@ form {
 .team-page .feedback-form {
   padding: 24px;
   margin-bottom: 24px;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
 }
 
 .team-page .my-objects {
   padding: 24px 24px 50px 24px;
   margin-bottom: 24px;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
 }
 
 .team-page .details-wrapper .user-info__wrapper {
@@ -1347,6 +1351,73 @@ ul.list-none, ul.list-none li {
   .partners-page .partner-item .partner-logo img {
     display: block;
     margin: auto;
+  }
+  
+  section.team-page {
+    padding: 50px 0 25px 0;
+  }
+  
+  .team-page .details-wrapper, .team-page .feedback-form,
+  .team-page .my-objects,
+  .accordion-body {
+    padding: 12px;
+  }
+  
+  .details-wrapper .img-thumbnail {
+    width: 100%;
+  }
+  
+  .team-page .details-wrapper .user-info__wrapper {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .team-page .details-wrapper .detail-actions {
+    margin-bottom: 25px;
+  }
+  
+  .team-page .details-wrapper .detail-actions a:first-child {
+    margin-right: 8px;
+  }
+  
+  .team-page .details-wrapper .contact-list .info-item {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-pills .nav-link {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  
+  .carousel-item .object {
+    margin-bottom: 24px;
+  }
+  
+  .my-objects .object .card-footer {
+    font-size: 12px;
+  }
+  
+  .team-page .review-card .customer-review {
+    margin-bottom: 12px;
+  }
+  
+  .team-page .review-card .customer-review .customer-info {
+    display: block;
+  }
+  
+  .team-page .review-card .customer-review .customer-info .customer-name {
+    justify-content: unset;
+  }
+  
+  .team-page .review-card .customer-review .customer-info .rating {
+    margin-top: 15px;
+  }
+  
+  .feedback-form {
+    margin-top: 24px;
+    transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
   }
 }
 
