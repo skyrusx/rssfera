@@ -465,14 +465,18 @@ form {
   color: #198754;
 }
 
-.vacancy-page .vacancy-detail .sidebar {
+.vacancy-page .vacancy-detail .sidebar-wrapper {
   transition-duration: .5s !important;
   transition-property: all !important;
+  position: sticky;
+  top: 10px;
+}
+
+.vacancy-page .vacancy-detail .sidebar {
   transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
   border-radius: 8px;
-  position: sticky;
-  top: 10px;
+  margin-bottom: 24px;
 }
 
 .vacancy-page .vacancy-detail .sidebar h5,
@@ -509,6 +513,67 @@ form {
   display: block;
 }
 
+.vacancy-page .vacancy-detail .vacancy-contact img {
+  width: auto;
+  height: 80px;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info {
+  margin-left: 10px;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .user-name a,
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .user-name a:focus {
+  color: black;
+  text-decoration: unset;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .user-name a:hover {
+  color: #198754;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .user-role {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item {
+  background: rgba(25, 135, 84, .2);
+  border-radius: 5px;
+  padding: 4px 8px 4px 36px;
+  position: relative;
+  display: inline-block;
+  color: #198754;
+  min-width: 160px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item i {
+  background: rgba(25, 135, 84, .2);
+  text-align: center;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px 0 0 5px;
+  line-height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  left: 0;
+  position: absolute;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item a,
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item a:focus {
+  color: #198754;
+  text-decoration: none;
+}
+
+.vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item a:hover {
+  color: #75b08a;
+}
+
 .list-skills .skill-item {
   display: inline-block;
   background-color: rgba(117, 176, 138, .2);
@@ -518,6 +583,10 @@ form {
   font-size: 14px;
   margin-right: 4px;
   margin-bottom: 8px;
+}
+
+#vacancy-response {
+  --bs-accordion-bg: transparent;
 }
 
 .content-info {
@@ -1071,11 +1140,31 @@ p:last-child {
 }
 
 .review-form input, .review-form textarea,
-.message-form input, .message-form textarea {
+.message-form input, .message-form textarea,
+.respond-form input, .respond-form textarea {
   margin: 0;
   padding: 10px 15px;
   background: #F6F6F9;
-  color: #0E0E46;
+  border: 1px solid #f4f4f4;
+  font-weight: normal;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  min-height: 45px;
+  font-size: 14px;
+}
+
+.respond-form input, .respond-form textarea,
+.respond-form input:focus, .respond-form textarea:focus, .respond-form select:focus {
+  background-color: rgba(117, 176, 138, .2);
+  outline: 0;
+  box-shadow: unset;
+}
+
+.respond-form select.form-select {
+  margin: 0;
+  padding: 10px 15px;
+  background-color: rgba(117, 176, 138, .2);
   border: 1px solid #f4f4f4;
   font-weight: normal;
   width: 100%;
@@ -1089,7 +1178,6 @@ p:last-child {
   margin: 0;
   padding: 10px 15px;
   background-color: #F6F6F9;
-  color: #0E0E46;
   border: 1px solid #f4f4f4;
   font-weight: normal;
   width: 100%;
