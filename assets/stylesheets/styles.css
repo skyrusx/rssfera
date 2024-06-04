@@ -1591,6 +1591,20 @@ ul.list-none, ul.list-none li {
   .breadcrumb .breadcrumb-item {
     font-size: 12px;
   }
+  
+  .vacancy-page .vacancy-detail .vacancy-contact img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item {
+    font-size: 10px;
+  }
+  
+  .vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item i {
+    width: 24px;
+    line-height: 24px
+  }
 }
 
 
