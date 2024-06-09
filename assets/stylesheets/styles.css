@@ -1321,17 +1321,6 @@ ul.list-none, ul.list-none li {
   padding: unset;
 }
 
-#admin-page .middle {
-  display: flex;
-  width: 600px;
-}
-
-#admin-page #login {
-  border-right: 1px solid #fff;
-  padding: 0px 22px;
-  width: 59%;
-}
-
 #admin-page .logo {
   margin-left: 44px;
 }
@@ -1376,6 +1365,11 @@ ul.list-none, ul.list-none li {
 }
 
 #login .form-check {
+  color: white;
+}
+
+.form-check-input.is-valid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
   color: white;
 }
 
@@ -1477,6 +1471,17 @@ ul.list-none, ul.list-none li {
   
   .partners-page .partner-item:nth-child(even) .partner-desc {
     order: 1;
+  }
+  
+  #admin-page .middle {
+    display: flex;
+    width: 600px;
+  }
+  
+  #admin-page #login {
+    border-right: 1px solid #fff;
+    padding: 0px 22px;
+    width: 59%;
   }
 }
 
@@ -1672,6 +1677,27 @@ ul.list-none, ul.list-none li {
   .vacancy-page .vacancy-detail .vacancy-contact .vacancy-contact__info .contact-list .info-item i {
     width: 24px;
     line-height: 24px
+  }
+  
+  #admin-page .middle {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #admin-page #login {
+    border-top: 1px solid #fff;
+    order: 2;
+  }
+  
+  #admin-page .logo {
+    display: block !important;
+    margin: unset;
+    text-align: center;
+    order: 1;
+  }
+  
+  #admin-page .logo img {
+    margin-bottom: 24px;
   }
 }
 
