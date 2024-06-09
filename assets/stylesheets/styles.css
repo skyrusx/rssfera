@@ -1311,6 +1311,69 @@ ul.list-none, ul.list-none li {
 
 /* Stars Rating End */
 
+#admin-page.auth {
+  background: radial-gradient(ellipse at center, #198754 1%, #000 100%);
+  height: calc(100vh);
+  width: 100%;
+}
+
+#admin-page {
+  padding: unset;
+}
+
+#admin-page .middle {
+  display: flex;
+  width: 600px;
+}
+
+#admin-page #login {
+  border-right: 1px solid #fff;
+  padding: 0px 22px;
+  width: 59%;
+}
+
+#admin-page .logo {
+  margin-left: 44px;
+}
+
+#admin-page .logo img {
+  background: white;
+  border-radius: 50%;
+  border: 3px solid #198754;
+  width: 100px;
+  padding: 10px;
+}
+
+#login form {
+  margin-top: 24px;
+}
+
+#login form i {
+  color: #198754;
+}
+
+#login .form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+#login .form-control:focus {
+  border-color: white;
+}
+
+#login .form-check-input:focus {
+  border-color: #198754;
+}
+
+#login .form-control:focus,
+#login .form-check-input:focus {
+  box-shadow: unset;
+}
+
+#login .form-check {
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-brand img {
     width: 100px;
