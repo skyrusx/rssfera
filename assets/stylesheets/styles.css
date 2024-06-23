@@ -137,6 +137,10 @@ form {
   background-image: url("../images/partners-bg.png");
 }
 
+.header .title-rent {
+  background-image: url("../images/rent-bg.jpeg");
+}
+
 .header .realty .all-objects {
   position: relative;
   top: 50%;
