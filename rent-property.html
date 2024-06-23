@@ -82,12 +82,400 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
+            <form class="rent-form">
+              <div class="row g-3 mb-3">
+                <div class="col-lg-4">
+                  <label class="form-label">Объект</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Комната</option>
+                    <option value="2">Квартира</option>
+                    <option value="3">Загородный дом</option>
+                    <option value="4">Земельный участок</option>
+                    <option value="5">Коммерческая недвижимость</option>
+                    <option value="6">Гараж</option>
+                  </select>
+                </div>
+                <div class="col-lg-2">
+                  <label for="room-size" class="form-label">Комнатность</label>
+                  <div id="room-size" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="one-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="one-room">1</label>
+
+                    <input type="checkbox" class="btn-check" id="two-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="two-room">2</label>
+
+                    <input type="checkbox" class="btn-check" id="three-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="three-room">3</label>
+
+                    <input type="checkbox" class="btn-check" id="four-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="four-room">4</label>
+
+                    <input type="checkbox" class="btn-check" id="five-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="five-room">5+</label>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label class="form-label">Стоимость, ₽</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="cost-from" placeholder="От">
+                    <input type="text" class="form-control" id="cost-to" placeholder="До">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label class="form-label">Площадь, м<sup>2</sup></label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="square-from" placeholder="От">
+                    <input type="text" class="form-control" id="square-to" placeholder="До">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label class="form-label">Этаж</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="floor-from" placeholder="От">
+                    <input type="text" class="form-control" id="floor-to" placeholder="До">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-lg-3">
+                  <label for="city" class="form-label">Город</label>
+                  <select class="form-select" id="city" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Мурманск</option>
+                    <option value="2">Умба</option>
+                  </select>
+                </div>
+                <div class="col-lg-3">
+                  <label for="district" class="form-label">Район</label>
+                  <select class="form-select" id="district" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Ленинский</option>
+                    <option value="2">Октябрьский</option>
+                    <option value="3">Первомайский</option>
+                  </select>
+                </div>
+                <div class="col-lg-3">
+                  <label for="street" class="form-label">Улица</label>
+                  <select class="form-select" id="street" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Аскольдовцев</option>
+                    <option value="2">Беломорская</option>
+                    <option value="3">Георгия Седова</option>
+                    <option value="4">Героев Рыбачьего</option>
+                    <option value="5">Достоевского</option>
+                    <option value="6">Зои Космодемьянской</option>
+                    <option value="7">Карла Либкнехта</option>
+                    <option value="8">Крупской</option>
+                    <option value="9">Ломоносова</option>
+                    <option value="10">Полярные Зори</option>
+                    <option value="11">Полярный Круг</option>
+                    <option value="12">Радищева</option>
+                    <option value="13">Саши Ковалева</option>
+                    <option value="14">Северный</option>
+                    <option value="15">Скальная</option>
+                    <option value="16">Старостина</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 d-flex align-items-end">
+                  <button type="button" class="btn btn-success w-100 align-bottom">Показать предложения</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Снять недвижимость</li>
               </ol>
             </nav>
+          </div>
+        </div>
+
+        <div class="row rent-info">
+          <div class="col-lg-12">
+            <h2>Аренда: квартиры в Мурманске</h2>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="object col-lg-6">
+                <div class="card">
+                  <a href="#">
+                    <div id="object1" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#object1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#object1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <span class="card-price">30 000 ₽ / в месяц</span>
+                    <h5 class="card-title"><a href="#">Сдается 4-комн. кв. 89 м²</a></h5>
+                    <p class="card-text">
+                      <small class="card-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Мурманск Полярные Зори 41 корпус 4
+                      </small>
+                      <small class="additional-payments">Коммунальные платежи включены в стоимость без учета счетчиков</small>
+                      Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                      Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                    <div class="square"><span>Площадь:</span> 89 м²</div>
+                    <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="object col-lg-6">
+                <div class="card">
+                  <a href="#">
+                    <div id="object2" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#object2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#object2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <span class="card-price">30 000 ₽ / в месяц</span>
+                    <h5 class="card-title"><a href="#">Сдается 4-комн. кв. 89 м²</a></h5>
+                    <p class="card-text">
+                      <small class="card-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Мурманск Полярные Зори 41 корпус 4
+                      </small>
+                      <small class="additional-payments">Коммунальные платежи и счетчики включены в стоимость</small>
+                      Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                      Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                    <div class="square"><span>Площадь:</span> 89 м²</div>
+                    <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="object col-lg-6">
+                <div class="card">
+                  <a href="#">
+                    <div id="object3" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#object3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#object3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <span class="card-price">30 000 ₽ / в месяц</span>
+                    <h5 class="card-title"><a href="#">Сдается 4-комн. кв. 89 м²</a></h5>
+                    <p class="card-text">
+                      <small class="card-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Мурманск Полярные Зори 41 корпус 4
+                      </small>
+                      <small class="additional-payments">Коммунальные платежи включены в стоимость без учета счетчиков</small>
+                      Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                      Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                    <div class="square"><span>Площадь:</span> 89 м²</div>
+                    <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="object col-lg-6">
+                <div class="card">
+                  <a href="#">
+                    <div id="object4" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#object4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#object4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <span class="card-price">30 000 ₽</span>
+                    <h5 class="card-title"><a href="#">Сдается 4-комн. кв. 89 м²</a></h5>
+                    <p class="card-text">
+                      <small class="card-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Мурманск Полярные Зори 41 корпус 4
+                      </small>
+                      <small class="additional-payments">Коммунальные платежи и счетчики включены в стоимость</small>
+                      Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                      Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                    <div class="square"><span>Площадь:</span> 89 м²</div>
+                    <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="object col-lg-6">
+                <div class="card">
+                  <a href="#">
+                    <div id="object5" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#object5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#object5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <span class="card-price">30 000 ₽ / в месяц</span>
+                    <h5 class="card-title"><a href="#">Сдается 4-комн. кв. 89 м²</a></h5>
+                    <p class="card-text">
+                      <small class="card-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Мурманск Полярные Зори 41 корпус 4
+                      </small>
+                      <small class="additional-payments">Коммунальные платежи включены в стоимость без учета счетчиков</small>
+                      Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                      Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                    <div class="square"><span>Площадь:</span> 89 м²</div>
+                    <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="object col-lg-6">
+                <div class="card">
+                  <a href="#">
+                    <div id="object6" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#object6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#object6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <span class="card-price">30 000 ₽ / в месяц</span>
+                    <h5 class="card-title"><a href="#">Сдается 4-комн. кв. 89 м²</a></h5>
+                    <p class="card-text">
+                      <small class="card-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Мурманск Полярные Зори 41 корпус 4
+                      </small>
+                      <small class="additional-payments">Коммунальные платежи и счетчики включены в стоимость</small>
+                      Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                      Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                    <div class="square"><span>Площадь:</span> 89 м²</div>
+                    <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="map-objects">
+              <iframe id="map_361319280" frameborder="0" style="overflow:hidden;height:100vh;width:100%" width="100%" height="100%" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_361319280", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzE5ODc1NCIsInRpdGxlIjoiTWpjZzBZTFJpOUdCSU9LQ3ZRPT0iLCJkZXNjcmlwdGlvbiI6IlBIQStNaTNRdXRDKzBMelF2UzRnMExyUXNpNDhMM0ErIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszMy4wNzQ1MjYsNjguOTk5MzA3XX0sImlkIjo4OTN9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzE5ODc1NCIsInRpdGxlIjoiTXpBZzBZTFJpOUdCSU9LQ3ZRPT0iLCJkZXNjcmlwdGlvbiI6IlBIQStNaTNRdXRDKzBMelF2UzRnMExyUXNpNGdORE1nMEx6Q3NpRFJqZEdDMExEUXRpQTJMems4TDNBKyIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzMuMDk4NDg5LDY4Ljg4Njk5N119LCJpZCI6MTAxMH0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMTk4NzU0IiwidGl0bGUiOiJNalVnMFlMUmk5R0JJT0tDdlE9PSIsImRlc2NyaXB0aW9uIjoiUEhBK015M1F1dEMrMEx6UXZTNGcwTHJRc2k0Z056UWcwTHpDc2lEUmpkR0MwTERRdGlBMUx6azhMM0ErIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszMy4xMDU2MDgsNjguOTgyODVdfSwiaWQiOjEyNTB9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzE5ODc1NCIsInRpdGxlIjoiTWpZZzBZTFJpOUdCSU9LQ3ZRPT0iLCJkZXNjcmlwdGlvbiI6IlBIQStNaTNRdXRDKzBMelF2UzRnMExyUXNpNGdOVFlnMEx6Q3NpRFJqZEdDMExEUXRpQTRMems4TDNBKyIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzMuMDk1NzU5LDY4Ljg5MTczOV19LCJpZCI6MTI3MX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMTk4NzU0IiwidGl0bGUiOiJNVFVnMFlMUmk5R0JJT0tDdlE9PSIsImRlc2NyaXB0aW9uIjoiUEhBK01TM1F1dEMrMEx6UXZTNGcwTHJRc2k0Z05ERWcwTHpDc2lEUmpkR0MwTERRdGlBM0x6azhMM0ErIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszMy4xMDU5MjIsNjguOTc2NzM4XX0sImlkIjoxMjg0fV0sIm1hcFBvc2l0aW9uIjp7ImxhdCI6NjguOTM5ODkyNzk5OTU3MDUsImxvbiI6MzMuMTM0MDc4NTI5MzQ2MDMsInpvb20iOjExfSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
+            </div>
           </div>
         </div>
       </div>

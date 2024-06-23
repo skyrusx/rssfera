@@ -168,7 +168,8 @@ form {
 }
 
 .all-objects .object .card-body,
-.my-objects .object .card-body {
+.my-objects .object .card-body,
+.rent-info .object .card-body {
   padding-top: 1.5rem;
 }
 
@@ -1375,6 +1376,67 @@ ul.list-none, ul.list-none li {
 .form-check-input.is-valid~.form-check-label,
 .was-validated .form-check-input:valid~.form-check-label {
   color: white;
+}
+
+.rent-form {
+  background-color: rgba(117, 176, 138, 0.5);
+  border-color: #f1155a;
+  padding: 20px;
+  border-top: 3px solid #198754;
+  border-radius: 0 0 7px 7px;
+}
+
+.rent-form label {
+  display: block;
+  color: #198754;
+  border-color: #198754;
+}
+
+.rent-form .btn-group label {
+  color: #75b08a;
+  background: white;
+}
+
+.rent-form .btn-group label:hover,
+.rent-form .btn-group .btn-check:checked+.btn {
+  color: white;
+  background: #75b08a;
+  border-color: #75b08a;
+}
+
+.rent-form input::placeholder {
+  color: #75b08a;
+  opacity: 1; /* Firefox */
+}
+
+.rent-form .form-control:focus,
+.rent-form .form-select:focus {
+  box-shadow: unset;
+}
+
+.rent-info h2 {
+  margin-bottom: 24px;
+}
+
+.rent-info .object {
+  margin-bottom: 24px;
+}
+
+.rent-info .object .card-footer {
+  font-size: 14px;
+}
+
+.rent-info .card-body .additional-payments {
+  color: #aab2bd;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.rent-info .map-objects {
+  transition-duration: .5s !important;
+  transition-property: all !important;
+  position: sticky;
+  top: 0;
 }
 
 @media screen and (min-width: 768px) {
