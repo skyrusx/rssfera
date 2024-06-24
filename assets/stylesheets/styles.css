@@ -334,30 +334,30 @@ form {
   color: #75b08a;
 }
 
-.vacancy-page .vacancy-list {
+.card-list {
   margin-top: 50px;
 }
 
-.vacancy-page .vacancy-list .card-wrapper {
+.card-list .card-wrapper {
   margin-bottom: 24px;
 }
 
-.vacancy-page .vacancy-list .card {
+.card-list .card {
   height: 100%;
 }
 
-.vacancy-page .vacancy-list .card:hover {
+.card-list .card:hover {
   background-color: #0596690d;
 }
 
-.vacancy-page .vacancy-list .card-icon {
+.card-list .card-icon {
   display: block;
   font-size: 30px;
   line-height: 32px;
   margin-bottom: 15px;
 }
 
-.vacancy-page .vacancy-list .card-icon i {
+.card-list .card-icon i {
   background-color: #0596690d;
   padding: 15px 16px;
   display: inline-block;
@@ -365,17 +365,17 @@ form {
   color: #198754;
 }
 
-.vacancy-page .vacancy-list .card:hover .card-icon i {
+.card-list .card:hover .card-icon i {
   color: white;
   background-color: #198754;
   transition: background 1s ease;
 }
 
-.vacancy-page .vacancy-list .card-title {
+.card-list .card-title {
   font-size: 18px;
 }
 
-.vacancy-page .vacancy-list .card-text {
+.card-list .card-text {
   font-size: 14px;
   color: #aab2bd;
 }
@@ -1422,6 +1422,11 @@ ul.list-none, ul.list-none li {
   margin-bottom: 24px;
 }
 
+.rent-info .object:nth-last-child(2),
+.rent-info .object:last-child {
+  margin-bottom: unset;
+}
+
 .rent-info .object .card-footer {
   font-size: 14px;
 }
@@ -1437,6 +1442,11 @@ ul.list-none, ul.list-none li {
   transition-property: all !important;
   position: sticky;
   top: 0;
+}
+
+.rent-management i {
+  color: #198754;
+  margin-right: 5px;
 }
 
 @media screen and (min-width: 768px) {
