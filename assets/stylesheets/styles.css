@@ -1577,37 +1577,9 @@ ul.list-none, ul.list-none li {
   right: -22px;
 }
 
-
-.gallery {
-  display: flex;
-  margin: 10px auto;
-  position: relative;
+.fotorama__wrap {
+  margin: 0 auto;
 }
-
-.gallery__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.gallery__thumb {
-  padding-top: 6px;
-  margin: 6px;
-  display: block;
-}
-
-.gallery__selector {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.gallery__selector:checked {
-
-}
-
 
 @media screen and (min-width: 768px) {
   .navbar-brand img {
