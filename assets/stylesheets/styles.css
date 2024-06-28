@@ -907,7 +907,8 @@ form {
   margin-bottom: 25px;
 }
 
-.team-page .details-wrapper .contact-list .info-item {
+.team-page .details-wrapper .contact-list .info-item,
+.agent-details .contact-list .info-item {
   background: rgba(25, 135, 84, .2);
   border-radius: 5px;
   padding: 8px 10px 8px 40px;
@@ -918,7 +919,15 @@ form {
   margin-right: 10px;
 }
 
-.team-page .details-wrapper .contact-list .info-item i {
+.agent-details .contact-list .info-item {
+  width: 100%;
+  margin-right: unset;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.team-page .details-wrapper .contact-list .info-item i,
+.agent-details .contact-list .info-item i {
   background: rgba(25, 135, 84, .2);
   text-align: center;
   width: 34px;
@@ -934,12 +943,15 @@ form {
 }
 
 .team-page .details-wrapper .contact-list .info-item a,
-.team-page .details-wrapper .contact-list .info-item a:focus {
+.team-page .details-wrapper .contact-list .info-item a:focus,
+.agent-details .contact-list .info-item a,
+.agent-details .contact-list .info-item a:focus {
   color: #198754;
   text-decoration: none;
 }
 
-.team-page .details-wrapper .contact-list .info-item a:hover {
+.team-page .details-wrapper .contact-list .info-item a:hover,
+.agent-details .contact-list .info-item a:hover {
   color: #75b08a;
 }
 
@@ -1138,7 +1150,8 @@ p:last-child {
 }
 
 .review-form input:focus, .review-form textarea:focus,
-.message-form input:focus, .message-form textarea:focus, .message-form select:focus {
+.message-form input:focus, .message-form textarea:focus, .message-form select:focus,
+.callme-form input:focus {
   background-color: #F6F6F9;
   outline: 0;
   box-shadow: unset;
@@ -1146,7 +1159,8 @@ p:last-child {
 
 .review-form input, .review-form textarea,
 .message-form input, .message-form textarea,
-.respond-form input, .respond-form textarea {
+.respond-form input, .respond-form textarea,
+.callme-form input {
   margin: 0;
   padding: 10px 15px;
   background: #F6F6F9;
@@ -1250,7 +1264,6 @@ ul.list-none, ul.list-none li {
   margin-bottom: 0;
   padding-left: 0;
 }
-
 
 /* Stars Rating */
 
@@ -1448,6 +1461,153 @@ ul.list-none, ul.list-none li {
   color: #198754;
   margin-right: 5px;
 }
+
+.rent-details .rent-gallery,
+.rent-details .rent-info,
+.rent-details .rent-about,
+.rent-details .rent-params,
+.rent-details .rent-map,
+.rent-details .rent-other,
+.agent-details {
+  padding: 24px;
+  margin-bottom: 24px;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+}
+
+.rent-details .rent-params h5 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.rent-details .rent-params ul.list-none li div {
+  width: 50%;
+}
+
+.rent-details .rent-params ul.list-none li .title {
+  color: #8A909A;
+}
+
+.rent-details h3 {
+  font-size: 24px;
+}
+
+.object-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.by-price, .by-location {
+  width: 100%;
+  height: 470px;
+  overflow-x:scroll;
+  overflow-y:hidden;
+}
+
+.scroll-objects {
+  white-space:nowrap;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.scroll-objects .object {
+  display: inline-block;
+  white-space: normal;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.scroll-objects .object .card-body {
+  padding-top: 1.5rem;
+}
+
+.scroll-objects .object .card-body .card-location,
+.scroll-objects .object .card-body .additional-payments {
+  font-size: 0.75rem;
+  display: block;
+}
+
+.scroll-objects .object .card-footer div {
+  padding: 0.5rem 0.2rem;
+  font-size: 12px;
+}
+
+.agent-details .card {
+  border: unset;
+}
+
+.agent-details .card .card-body {
+  padding-right: unset;
+  padding-left: unset;
+}
+
+.agent-details .agent-name {
+  margin-bottom: 24px;
+}
+
+.agent-details .agent-name a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #198754;
+}
+
+.agent-details .agent-name a:hover {
+  color: #75b08a;
+}
+
+.agent-details .agent-photo a {
+  position: relative;
+  display: inline-block;
+}
+
+.agent-details .agent-photo img {
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.agent-details .agent-photo .rating {
+  background-color: #198754;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  position: absolute;
+  bottom: -8px;
+  right: -22px;
+}
+
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  position: relative;
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__thumb {
+  padding-top: 6px;
+  margin: 6px;
+  display: block;
+}
+
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gallery__selector:checked {
+
+}
+
 
 @media screen and (min-width: 768px) {
   .navbar-brand img {
