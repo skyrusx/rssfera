@@ -90,7 +90,7 @@ form {
 }
 
 .header .realty {
-  background-image: url("../images/main-bg.jpeg");
+  background-image: url("../images/main/main-bg.jpeg");
 }
 
 .header .title {
@@ -595,7 +595,7 @@ form {
 }
 
 .content-info {
-  background: url("../images/location-bg.png") no-repeat scroll 0 center transparent;
+  background: url("../images/main/location-bg.png") no-repeat scroll 0 center transparent;
   
   color: white;
   padding: 7% 0 3%;
