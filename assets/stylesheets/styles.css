@@ -1160,7 +1160,7 @@ p:last-child {
 .review-form input, .review-form textarea,
 .message-form input, .message-form textarea,
 .respond-form input, .respond-form textarea,
-.callme-form input {
+.callme-form input, .rental-request-form input {
   margin: 0;
   padding: 10px 15px;
   background: #F6F6F9;
@@ -1178,6 +1178,16 @@ p:last-child {
   background-color: rgba(117, 176, 138, .2);
   outline: 0;
   box-shadow: unset;
+}
+
+.rental-request-form input, .rental-request-form input:focus {
+  outline: 0;
+  box-shadow: unset;
+  background-color: #F6F6F9;
+}
+
+.rental-request-form {
+  margin-top: 24px;
 }
 
 .respond-form select.form-select {

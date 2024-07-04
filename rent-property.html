@@ -487,6 +487,40 @@
       </div>
     </section>
 
+    <section class="section rea-area bg-overlay ptb_100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="section-heading text-center m-0">
+              <h2 class="text-white">Не нашли подходящий вариат?</h2>
+              <p class="text-white mt-4">Оставьте заявку и мы подберем объект из закрытой базы</p>
+<!--              <a href="#" class="btn btn-light mt-4">снять квартиру</a>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+            <form class="needs-validation rental-request-form" novalidate>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Ваше имя" required>
+                <div class="invalid-feedback">Пожалуйста введите имя</div>
+                <div class="valid-feedback">Заполнено!</div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Ваш телефон" required>
+                <div class="invalid-feedback">Пожалуйста введите телефон</div>
+                <div class="valid-feedback">Заполнено!</div>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="rent-services bg-white">
       <div class="container">
         <div class="row">
@@ -557,20 +591,6 @@
                   <p class="card-text">индивидуальный подход, с учетом всех пожеланий</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rea-area bg-overlay ptb_100">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10">
-            <div class="section-heading text-center m-0">
-              <h2 class="text-white">Хотите быстро и без переплат снять квартиру?</h2>
-              <p class="text-white mt-4">Ответьте на несколько вопросов и наш специалист с Вами свяжется</p>
-              <a href="#" class="btn btn-light mt-4">снять квартиру</a>
             </div>
           </div>
         </div>
@@ -712,5 +732,22 @@
     </footer>
 
     <script src="assets/javascripts/bootstrap.bundle.min.js"></script>
+    <script>
+      (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
   </body>
 </html>
