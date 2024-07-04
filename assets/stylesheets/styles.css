@@ -184,6 +184,24 @@ form {
   margin-top: -42px;
 }
 
+.rent-info-list .object .card-body .card-price {
+  position: relative;
+  color: #198754;
+  background: unset;
+  padding: unset;
+  margin-top: unset;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.rent-info-list .object .card-body .card-text {
+  margin-bottom: 0.5rem;
+}
+
+.rent-info-list .object .card-body .card-text:last-child {
+  margin-bottom: unset;
+}
+
 .object .card-body .card-title a,
 .object .card-body .card-title a:focus {
   color: black;
@@ -1463,6 +1481,11 @@ ul.list-none, ul.list-none li {
 .rent-info .object:nth-last-child(2),
 .rent-info .object:last-child {
   margin-bottom: unset;
+}
+
+.rent-info-list .object:nth-last-child(2),
+.rent-info-list .object:last-child {
+  margin-bottom: 24px;
 }
 
 .rent-info .object .card-footer {
