@@ -1405,6 +1405,10 @@ ul.list-none, ul.list-none li {
   color: white;
 }
 
+.wrapper-forms .nav-pills .nav-link {
+  color: white;
+}
+
 .form-placement .form-control:focus,
 .form-placement .form-select:focus,
 .form-placement-short .form-control:focus,
