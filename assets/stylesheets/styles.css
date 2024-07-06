@@ -141,6 +141,10 @@ form {
   background-image: url("../images/rent/rent-bg.jpeg");
 }
 
+.header .title-sell {
+  background-image: url("../images/sell/sell-bg.jpeg");
+}
+
 .header .realty .all-objects {
   position: relative;
   top: 50%;
@@ -1178,7 +1182,8 @@ p:last-child {
 .review-form input, .review-form textarea,
 .message-form input, .message-form textarea,
 .respond-form input, .respond-form textarea,
-.callme-form input, .rental-request-form input {
+.callme-form input, .rental-request-form input,
+.consultation-form input, .consultation-form textarea {
   margin: 0;
   padding: 10px 15px;
   background: #F6F6F9;
@@ -1192,7 +1197,9 @@ p:last-child {
 }
 
 .respond-form input, .respond-form textarea,
-.respond-form input:focus, .respond-form textarea:focus, .respond-form select:focus {
+.respond-form input:focus, .respond-form textarea:focus, .respond-form select:focus,
+.consultation-form input, .consultation-form textarea,
+.consultation-form input:focus, .consultation-form textarea:focus, .consultation-form select:focus {
   background-color: rgba(117, 176, 138, .2);
   outline: 0;
   box-shadow: unset;
@@ -1208,7 +1215,8 @@ p:last-child {
   margin-top: 24px;
 }
 
-.respond-form select.form-select {
+.respond-form select.form-select,
+.consultation-form select.form-select {
   margin: 0;
   padding: 10px 15px;
   background-color: rgba(117, 176, 138, .2);
@@ -1644,6 +1652,43 @@ ul.list-none, ul.list-none li {
 
 .wrapper-forms .nav-pills .nav-link:hover {
   color: white;
+}
+
+.sell-consultation {
+  padding-top: unset;
+}
+
+.sell-wrapper {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  transition-timing-function: cubic-bezier(.4,0,.2,1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
+  margin-bottom: 24px;
+  background-image: url("../images/sell/consult.png");
+  background-repeat: no-repeat;
+  background-position: bottom left 330px;
+  background-size: auto 280px;
+}
+
+.consultation-form {
+  margin-bottom: unset;
+}
+
+.sell-details h2.title {
+  margin-bottom: 24px;
+}
+
+.sell-details__row {
+  min-height: 440px;
+}
+
+.sell-details__row img {
+  width: 450px;
+}
+
+.sell-details__row .accordion-body p {
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 768px) {
