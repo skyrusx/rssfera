@@ -1714,6 +1714,33 @@ ul.list-none, ul.list-none li {
   bottom: -130px;
 }
 
+.search-results {
+  margin-top: 24px;
+}
+
+.search-results h4 {
+  margin-bottom: 24px;
+}
+
+.search-results .table tbody tr th,
+.search-results .table tbody tr td {
+  font-size: 14px;
+}
+
+.search-results .table .district {
+  font-size: 13px;
+  color: #75b08a;
+}
+
+.search-results .table a, .table a:focus {
+  color: #198754;
+  text-decoration: none
+}
+
+.search-results .table a:hover {
+  color: #75b08a;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-brand img {
     width: 100px;
