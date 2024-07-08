@@ -1691,6 +1691,29 @@ ul.list-none, ul.list-none li {
   margin-bottom: 4px;
 }
 
+.sell-explore__wrapper {
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #198754;
+  color: #d3d4d5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sell-explore__wrapper h1 {
+  color: white;
+}
+
+.sell-explore__wrapper .explore-link a {
+  border-radius: unset;
+  padding: 15px 40px;
+}
+
+.sell-details .explore-wrapper {
+  bottom: -130px;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-brand img {
     width: 100px;
