@@ -145,6 +145,10 @@ form {
   background-image: url("../images/sell/sell-bg.jpeg");
 }
 
+.header .title-search {
+  background-image: url("../images/search-buyer/search-bg.jpeg");
+}
+
 .header .realty .all-objects {
   position: relative;
   top: 50%;
