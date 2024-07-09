@@ -1722,6 +1722,14 @@ ul.list-none, ul.list-none li {
   margin-bottom: 24px;
 }
 
+.search-results .table-wrapper {
+  overflow-x: auto;
+}
+
+.search-results .table-wrapper .table {
+  min-width: 1200px;
+}
+
 .search-results .table tbody tr th,
 .search-results .table tbody tr td {
   font-size: 14px;
