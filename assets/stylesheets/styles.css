@@ -1550,6 +1550,13 @@ ul.list-none, ul.list-none li {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 3px #3c485826 !important;
 }
 
+.agent-details {
+  transition-duration: .5s !important;
+  transition-property: all !important;
+  position: sticky;
+  top: 10px;
+}
+
 .rent-details .rent-params h5 {
   margin-top: 10px;
   font-size: 16px;
