@@ -149,6 +149,10 @@ form {
   background-image: url("../images/search-buyer/search-bg.jpeg");
 }
 
+.header .title-base {
+  background-image: url("../images/main/main-bg.jpeg");
+}
+
 .header .realty .all-objects {
   position: relative;
   top: 50%;
@@ -157,10 +161,21 @@ form {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 50px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.header .realty .all-objects h2 {
+  color: white;
+}
+
+.header .realty .all-objects h4 {
+  color: grey;
 }
 
 .header .realty .all-objects .btn {
   border-radius: unset;
+  margin-top: 24px;
 }
 
 .subtitle {
