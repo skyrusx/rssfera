@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>РиелтСтройСфера | Агентство Недвижимости</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand d-md-none" href="index.html">
+            <img src="assets/images/logo.png" alt="РиелтСтройСфера">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Купить
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="buy-room.html">Комнату</a></li>
+                  <li><a class="dropdown-item" href="buy-flat.html">Квартиру</a></li>
+                  <li><a class="dropdown-item" href="buy-house.html">Загородный дом</a></li>
+                  <li><a class="dropdown-item" href="buy-land.html">Земельный участок</a></li>
+                  <li><a class="dropdown-item" href="buy-commercial.html">Коммерческая недвижимость</a></li>
+                  <li><a class="dropdown-item" href="buy-garage.html">Гараж</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item active" href="base-property.html">База недвижимости</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Продать
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="sell-room.html">Комнату</a></li>
+                  <li><a class="dropdown-item" href="sell-flat.html">Квартиру</a></li>
+                  <li><a class="dropdown-item" href="sell-house.html">Загородный дом</a></li>
+                  <li><a class="dropdown-item" href="sell-land.html">Земельный участок</a></li>
+                  <li><a class="dropdown-item" href="sell-commercial.html">Коммерческая недвижимость</a></li>
+                  <li><a class="dropdown-item" href="sell-garage.html">Гараж</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="search-buyer.html">Подбор покупателей</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Аренда
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="rent-property.html">Снять недвижимость</a></li>
+                  <li><a class="dropdown-item" href="rent-out-property.html">Сдать недвижимость</a></li>
+                </ul>
+              </li>
+              <a class="navbar-brand d-none d-md-block" href="index.html">
+                <img src="assets/images/logo.png" alt="РиелтСтройСфера">
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Сотрудники</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vacancy.html">Вакансии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-main-menu"></div>
+        </div>
+      </nav>
+
+      <div class="title title-base text-center">
+        <div class="title-bg"></div>
+        <h1>База недвижимости</h1>
+      </div>
+    </header>
+
+    <section class="new-objects bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">База недвижимости</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <h4>Лучшие предложения</h4>
+            <p class="subtitle">для поиска и подбора объявлений недвижимости</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="btn-group">
+              <a href="base-property.html" class="btn btn-success active" aria-current="page">Купить</a>
+              <a href="rent-property.html" class="btn btn-success">Снять</a>
+            </div>
+
+            <form class="rent-form">
+              <div class="row g-3 mb-3">
+                <div class="col-lg-4">
+                  <label class="form-label">Тип недвижимости</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Все объекты</option>
+                    <option value="1">Комната</option>
+                    <option value="2">Квартира</option>
+                    <option value="3">Загородный дом</option>
+                    <option value="4">Земельный участок</option>
+                    <option value="5">Коммерческая недвижимость</option>
+                    <option value="6">Гараж</option>
+                  </select>
+                </div>
+                <div class="col-lg-2">
+                  <label for="room-size" class="form-label">Комнатность</label>
+                  <div id="room-size" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="one-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="one-room">1</label>
+
+                    <input type="checkbox" class="btn-check" id="two-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="two-room">2</label>
+
+                    <input type="checkbox" class="btn-check" id="three-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="three-room">3</label>
+
+                    <input type="checkbox" class="btn-check" id="four-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="four-room">4</label>
+
+                    <input type="checkbox" class="btn-check" id="five-room" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="five-room">5+</label>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label class="form-label">Стоимость, ₽</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="cost-from" placeholder="От">
+                    <input type="text" class="form-control" id="cost-to" placeholder="До">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label class="form-label">Площадь, м<sup>2</sup></label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="square-from" placeholder="От">
+                    <input type="text" class="form-control" id="square-to" placeholder="До">
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <label class="form-label">Этаж</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="floor-from" placeholder="От">
+                    <input type="text" class="form-control" id="floor-to" placeholder="До">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-lg-3">
+                  <label for="city" class="form-label">Город</label>
+                  <select class="form-select" id="city" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Мурманск</option>
+                    <option value="2">Умба</option>
+                  </select>
+                </div>
+                <div class="col-lg-3">
+                  <label for="district" class="form-label">Район</label>
+                  <select class="form-select" id="district" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Ленинский</option>
+                    <option value="2">Октябрьский</option>
+                    <option value="3">Первомайский</option>
+                  </select>
+                </div>
+                <div class="col-lg-3">
+                  <label for="street" class="form-label">Улица</label>
+                  <select class="form-select" id="street" aria-label="Default select example">
+                    <option selected>Выбрать</option>
+                    <option value="1">Аскольдовцев</option>
+                    <option value="2">Беломорская</option>
+                    <option value="3">Георгия Седова</option>
+                    <option value="4">Героев Рыбачьего</option>
+                    <option value="5">Достоевского</option>
+                    <option value="6">Зои Космодемьянской</option>
+                    <option value="7">Карла Либкнехта</option>
+                    <option value="8">Крупской</option>
+                    <option value="9">Ломоносова</option>
+                    <option value="10">Полярные Зори</option>
+                    <option value="11">Полярный Круг</option>
+                    <option value="12">Радищева</option>
+                    <option value="13">Саши Ковалева</option>
+                    <option value="14">Северный</option>
+                    <option value="15">Скальная</option>
+                    <option value="16">Старостина</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 d-flex align-items-end">
+                  <button type="button" class="btn btn-success w-100 align-bottom">Показать предложения</button>
+                </div>
+              </div>
+            </form>
+
+            <div class="display-options d-flex justify-content-between align-items-center">
+              <div class="title"><h2>Покупка: недвижимости в Мурманске</h2></div>
+              <div class="switch d-none d-lg-block">
+                <ul class="nav nav-pills mb-3" id="switch-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="3x3-tab" data-bs-toggle="pill" data-bs-target="#3x3" type="button" role="tab" aria-controls="3x3" aria-selected="false" tabindex="-1"><i class="bi bi-grid-3x3-gap"></i></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="list-tab" data-bs-toggle="pill" data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false" tabindex="-1"><i class="bi bi-view-stacked"></i></button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="3x3" role="tabpanel" aria-labelledby="3x3-tab" tabindex="0">
+                <div class="all-objects row">
+                  <div class="object col-lg-4">
+                    <div class="card">
+                      <a href="#">
+                        <div id="object1" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#object1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#object1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <span class="card-price">8 100 000 ₽</span>
+                        <h5 class="card-title"><a href="#">Продается 4-комн. кв. 89 м²</a></h5>
+                        <p class="card-text">
+                          <small class="card-location">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Мурманск Полярные Зори 41 корпус 4
+                          </small>
+                          Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                          Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                        <div class="square"><span>Площадь:</span> 89 м²</div>
+                        <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="object col-lg-4">
+                    <div class="card">
+                      <a href="#">
+                        <div id="object2" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#object2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#object2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <span class="card-price">8 100 000 ₽</span>
+                        <h5 class="card-title"><a href="#">Продается 4-комн. кв. 89 м²</a></h5>
+                        <p class="card-text">
+                          <small class="card-location">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Мурманск Полярные Зори 41 корпус 4
+                          </small>
+                          Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                          Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                        <div class="square"><span>Площадь:</span> 89 м²</div>
+                        <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="object col-lg-4">
+                    <div class="card">
+                      <a href="#">
+                        <div id="object3" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#object3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#object3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <span class="card-price">8 100 000 ₽</span>
+                        <h5 class="card-title"><a href="#">Продается 4-комн. кв. 89 м²</a></h5>
+                        <p class="card-text">
+                          <small class="card-location">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Мурманск Полярные Зори 41 корпус 4
+                          </small>
+                          Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                          Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                        <div class="square"><span>Площадь:</span> 89 м²</div>
+                        <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="object col-lg-4">
+                    <div class="card">
+                      <a href="#">
+                        <div id="object4" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#object4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#object4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <span class="card-price">8 100 000 ₽</span>
+                        <h5 class="card-title"><a href="#">Продается 4-комн. кв. 89 м²</a></h5>
+                        <p class="card-text">
+                          <small class="card-location">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Мурманск Полярные Зори 41 корпус 4
+                          </small>
+                          Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                          Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                        <div class="square"><span>Площадь:</span> 89 м²</div>
+                        <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="object col-lg-4">
+                    <div class="card">
+                      <a href="#">
+                        <div id="object5" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#object5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#object5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <span class="card-price">8 100 000 ₽</span>
+                        <h5 class="card-title"><a href="#">Продается 4-комн. кв. 89 м²</a></h5>
+                        <p class="card-text">
+                          <small class="card-location">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Мурманск Полярные Зори 41 корпус 4
+                          </small>
+                          Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                          Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                        <div class="square"><span>Площадь:</span> 89 м²</div>
+                        <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="object col-lg-4">
+                    <div class="card">
+                      <a href="#">
+                        <div id="object6" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#object6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#object6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <span class="card-price">8 100 000 ₽</span>
+                        <h5 class="card-title"><a href="#">Продается 4-комн. кв. 89 м²</a></h5>
+                        <p class="card-text">
+                          <small class="card-location">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Мурманск Полярные Зори 41 корпус 4
+                          </small>
+                          Рядом два садика, две школы, конечная автобуса 5 и не далеко автобуса 18.
+                          Под окнами парковка, детская и спортивная площадки, очень зелёный двор...</p>
+                      </div>
+                      <div class="card-footer text-body-secondary">
+                        <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                        <div class="square"><span>Площадь:</span> 89 м²</div>
+                        <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab" tabindex="0">
+                <div class="row rent-info rent-info-list">
+                  <div class="object col-lg-12">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <a href="rent-object.html">
+                            <div id="object16" class="carousel slide">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#object16" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#object16" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="card-top d-flex justify-content-between align-items-center">
+                              <h5 class="card-title"><a href="rent-object.html">Продается 4-комн. кв. 89 м²</a></h5>
+                              <div class="card-price">8 100 000 ₽</div>
+                            </div>
+
+                            <p class="card-text">
+                              <small class="card-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Мурманск Полярные Зори 41 корпус 4
+                              </small>
+                              <small class="additional-payments">&nbsp;</small>
+                            </p>
+                            <p class="card-text">Состояние объекта: Квартира в обычном жилом состоянии, но больше под
+                              ремонт. Частично заменены трубы. Санузел раздельный и в хорошем состоянии - кафель. Комнаты
+                              изолированные, солнечная сторона, электроплита, большая лоджия, прекрасный вид на сопки...</p>
+                          </div>
+                          <div class="card-footer text-body-secondary">
+                            <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                            <div class="square"><span>Площадь:</span> 89 м²</div>
+                            <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="object col-lg-12">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <a href="rent-object.html">
+                            <div id="object17" class="carousel slide">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#object17" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#object17" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="card-top d-flex justify-content-between align-items-center">
+                              <h5 class="card-title"><a href="rent-object.html">Продается 4-комн. кв. 89 м²</a></h5>
+                              <div class="card-price">8 100 000 ₽</div>
+                            </div>
+
+                            <p class="card-text">
+                              <small class="card-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Мурманск Полярные Зори 41 корпус 4
+                              </small>
+                              <small class="additional-payments">&nbsp;</small>
+                            </p>
+                            <p class="card-text">Состояние объекта: Квартира в обычном жилом состоянии, но больше под
+                              ремонт. Частично заменены трубы. Санузел раздельный и в хорошем состоянии - кафель. Комнаты
+                              изолированные, солнечная сторона, электроплита, большая лоджия, прекрасный вид на сопки...</p>
+                          </div>
+                          <div class="card-footer text-body-secondary">
+                            <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                            <div class="square"><span>Площадь:</span> 89 м²</div>
+                            <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="object col-lg-12">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <a href="rent-object.html">
+                            <div id="object18" class="carousel slide">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#object18" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#object18" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="card-top d-flex justify-content-between align-items-center">
+                              <h5 class="card-title"><a href="rent-object.html">Продается 4-комн. кв. 89 м²</a></h5>
+                              <div class="card-price">8 100 000 ₽</div>
+                            </div>
+
+                            <p class="card-text">
+                              <small class="card-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Мурманск Полярные Зори 41 корпус 4
+                              </small>
+                              <small class="additional-payments">&nbsp;</small>
+                            </p>
+                            <p class="card-text">Состояние объекта: Квартира в обычном жилом состоянии, но больше под
+                              ремонт. Частично заменены трубы. Санузел раздельный и в хорошем состоянии - кафель. Комнаты
+                              изолированные, солнечная сторона, электроплита, большая лоджия, прекрасный вид на сопки...</p>
+                          </div>
+                          <div class="card-footer text-body-secondary">
+                            <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                            <div class="square"><span>Площадь:</span> 89 м²</div>
+                            <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="object col-lg-12">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-lg-4">
+                          <a href="rent-object.html">
+                            <div id="object19" class="carousel slide">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/images/objects/object1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#object19" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#object19" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="card-top d-flex justify-content-between align-items-center">
+                              <h5 class="card-title"><a href="rent-object.html">Продается 4-комн. кв. 89 м²</a></h5>
+                              <div class="card-price">8 100 000 ₽</div>
+                            </div>
+
+                            <p class="card-text">
+                              <small class="card-location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Мурманск Полярные Зори 41 корпус 4
+                              </small>
+                              <small class="additional-payments">&nbsp;</small>
+                            </p>
+                            <p class="card-text">Состояние объекта: Квартира в обычном жилом состоянии, но больше под
+                              ремонт. Частично заменены трубы. Санузел раздельный и в хорошем состоянии - кафель. Комнаты
+                              изолированные, солнечная сторона, электроплита, большая лоджия, прекрасный вид на сопки...</p>
+                          </div>
+                          <div class="card-footer text-body-secondary">
+                            <div class="num-rooms"><span>Комнаты:</span> 4</div>
+                            <div class="square"><span>Площадь:</span> 89 м²</div>
+                            <div class="floor-info"><span>Этаж:</span> 5/5</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-objects">
+        <iframe id="map_361319280_1" frameborder="0" style="overflow:hidden;height:500px;width:100%"
+                sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+        <script type="text/javascript">(function (e, t) {
+          var r = document.getElementById(e);
+          r.contentWindow.document.open(), r.contentWindow.document.write(atob(t)), r.contentWindow.document.close()
+        })("map_361319280_1", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzE5ODc1NCIsInRpdGxlIjoiTWpjZzBZTFJpOUdCSU9LQ3ZRPT0iLCJkZXNjcmlwdGlvbiI6IlBIQStNaTNRdXRDKzBMelF2UzRnMExyUXNpNDhMM0ErIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszMy4wNzQ1MjYsNjguOTk5MzA3XX0sImlkIjo4OTN9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzE5ODc1NCIsInRpdGxlIjoiTXpBZzBZTFJpOUdCSU9LQ3ZRPT0iLCJkZXNjcmlwdGlvbiI6IlBIQStNaTNRdXRDKzBMelF2UzRnMExyUXNpNGdORE1nMEx6Q3NpRFJqZEdDMExEUXRpQTJMems4TDNBKyIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzMuMDk4NDg5LDY4Ljg4Njk5N119LCJpZCI6MTAxMH0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMTk4NzU0IiwidGl0bGUiOiJNalVnMFlMUmk5R0JJT0tDdlE9PSIsImRlc2NyaXB0aW9uIjoiUEhBK015M1F1dEMrMEx6UXZTNGcwTHJRc2k0Z056UWcwTHpDc2lEUmpkR0MwTERRdGlBMUx6azhMM0ErIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszMy4xMDU2MDgsNjguOTgyODVdfSwiaWQiOjEyNTB9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzE5ODc1NCIsInRpdGxlIjoiTWpZZzBZTFJpOUdCSU9LQ3ZRPT0iLCJkZXNjcmlwdGlvbiI6IlBIQStNaTNRdXRDKzBMelF2UzRnMExyUXNpNGdOVFlnMEx6Q3NpRFJqZEdDMExEUXRpQTRMems4TDNBKyIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzMuMDk1NzU5LDY4Ljg5MTczOV19LCJpZCI6MTI3MX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMTk4NzU0IiwidGl0bGUiOiJNVFVnMFlMUmk5R0JJT0tDdlE9PSIsImRlc2NyaXB0aW9uIjoiUEhBK01TM1F1dEMrMEx6UXZTNGcwTHJRc2k0Z05ERWcwTHpDc2lEUmpkR0MwTERRdGlBM0x6azhMM0ErIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszMy4xMDU5MjIsNjguOTc2NzM4XX0sImlkIjoxMjg0fV0sIm1hcFBvc2l0aW9uIjp7ImxhdCI6NjguOTM5ODkyNzk5OTU3MDUsImxvbiI6MzMuMTM0MDc4NTI5MzQ2MDMsInpvb20iOjExfSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
+      </div>
+    </section>
+
+    <section class="useful-links bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h4>Услуги</h4>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="card-list">
+            <div class="row text-center">
+              <div class="col-lg-4 card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-icon"><i class="bi bi-house-check"></i></div>
+                    <h5 class="card-title">Продажа недвижимости</h5>
+                    <div class="card-text">Продадим вашу недвижимость выгодно, быстро и безопасно</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-icon"><i class="bi bi-file-earmark-check"></i></div>
+                    <h5 class="card-title">Проверка недвижимости</h5>
+                    <div class="card-text">Досконально проверим объект и собственника, минимизируем риски</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-icon"><i class="bi bi-search"></i></div>
+                    <h5 class="card-title">Оценка недвижимости</h5>
+                    <div class="card-text">Рассчитаем стоимость вашей недвижимости и поможем продать дороже</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h5 class="card-title">Страхование недвижимости</h5>
+                    <div class="card-text">Защитим вас и ваше имущество от любых непредвиденных обстоятельств</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-icon"><i class="bi bi-percent"></i></div>
+                    <h5 class="card-title">Выгодная ипотека</h5>
+                    <p class="card-text">Подберём самое выгодное и прозрачное ипотечное предложение</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-wrapper">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-icon"><i class="bi bi-folder2-open"></i></div>
+                    <h5 class="card-title">Онлайн сделка</h5>
+                    <p class="card-text">Оформим покупку или продажу недвижимости онлайн</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rea-area bg-overlay ptb_100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="section-heading text-center m-0">
+              <h2 class="text-white">Не нашли подходящий вариат?</h2>
+              <p class="text-white mt-4">Оставьте заявку и мы подберем объект из закрытой базы</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4">
+            <form class="needs-validation rental-request-form" novalidate>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Ваше имя" required>
+                <div class="invalid-feedback">Пожалуйста введите имя</div>
+                <div class="valid-feedback">Заполнено!</div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Ваш телефон" required>
+                <div class="invalid-feedback">Пожалуйста введите телефон</div>
+                <div class="valid-feedback">Заполнено!</div>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-info">
+      <div class="content-info__bg"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="title">Контактная информация</div>
+            <div class="footer-contact-info">
+              <div class="info-item" title="г. Мурманск, ул.Полярные Зори, д. 44, 2-й этаж (вход со двора)">
+                <i class="bi bi-geo-alt-fill"></i>
+                г. Мурманск, ул.Полярные Зори, д. 44
+              </div>
+
+              <div class="info-item">
+                <i class="bi bi-telephone-fill"></i>
+                <a href="tel:+79537541623">+7 (953) 754-1623</a>
+              </div>
+
+              <div class="info-item">
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:rssfera@mail.ru">rssfera@mail.ru</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 offset-lg-4 col-12">
+            <div class="title">Юридическая информация</div>
+            <div class="footer-contact-info">
+              <div class="info-item">
+                <i class="bi bi-file-text"></i>
+                ИП Кулишов Дмитрий Александрович
+              </div>
+
+              <div class="info-item">
+                <i class="bi bi-file-text"></i>
+                ИНН 519030367637
+              </div>
+
+              <div class="btn-group">
+                <a href="https://vk.com/rssfera" class="btn btn-outline-secondary" target="_blank" title="ВКонтакте">
+                  <svg fill="#FFFFFF" height="16" width="16" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 363.301 363.301" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <path d="M347.506,240.442c-7.91-9.495-16.899-18.005-25.592-26.235c-3.091-2.927-6.287-5.953-9.368-8.962 c-8.845-8.648-9.167-11.897-2.164-21.72c4.845-6.771,9.982-13.551,14.95-20.108c4.506-5.949,9.166-12.101,13.632-18.273l0.917-1.269 c8.536-11.811,17.364-24.024,22.062-38.757c1.22-3.887,2.501-9.607-0.428-14.39c-2.927-4.779-8.605-6.237-12.622-6.918 c-1.987-0.337-3.96-0.383-5.791-0.383l-55.901-0.04l-0.462-0.004c-8.452,0-14.148,3.983-17.412,12.178 c-3.116,7.83-6.539,16.168-10.445,24.096c-7.773,15.787-17.645,33.97-31.93,49.135l-0.604,0.645 c-1.687,1.813-3.598,3.866-4.995,3.866c-0.214,0-0.447-0.041-0.711-0.124c-2.959-1.153-4.945-8.316-4.855-11.648 c0.001-0.046,0.002-0.092,0.002-0.138l-0.039-64.61c0-0.224-0.016-0.446-0.045-0.668c-1.422-10.503-4.572-17.041-16.474-19.372 c-0.316-0.063-0.639-0.094-0.961-0.094h-58.126c-9.47,0-14.688,3.849-19.593,9.61c-1.324,1.54-4.08,4.746-2.714,8.635 c1.386,3.947,5.885,4.791,7.35,5.065c7.272,1.384,11.371,5.832,12.532,13.604c2.027,13.496,2.276,27.901,0.784,45.334 c-0.416,4.845-1.239,8.587-2.595,11.784c-0.315,0.746-1.432,3.181-2.571,3.182c-0.362,0-1.409-0.142-3.316-1.456 c-4.509-3.089-7.808-7.497-11.654-12.942c-13.084-18.491-24.065-38.861-33.575-62.288c-3.527-8.624-10.114-13.452-18.556-13.594 c-9.276-0.141-17.686-0.209-25.707-0.209c-8.764,0-16.889,0.081-24.823,0.246C8.914,83.74,4.216,85.776,1.744,89.676 c-2.476,3.903-2.315,9.03,0.479,15.236c22.366,49.723,42.645,85.876,65.755,117.228c16.193,21.938,32.435,37.123,51.109,47.784 c19.674,11.255,41.722,16.727,67.402,16.727c2.911,0,5.921-0.071,8.956-0.213c14.922-0.727,20.458-6.128,21.158-20.657 c0.333-7.425,1.145-15.212,4.795-21.853c2.304-4.184,4.452-4.184,5.158-4.184c1.36,0,3.046,0.626,4.857,1.799 c3.248,2.12,6.033,4.96,8.316,7.441c2.149,2.357,4.274,4.738,6.401,7.12c4.59,5.141,9.336,10.456,14.294,15.497 c10.852,11.041,22.807,15.897,36.538,14.843h51.252c0.109,0,0.219-0.004,0.328-0.011c5.107-0.337,9.53-3.17,12.135-7.772 c3.227-5.701,3.162-12.974-0.174-19.46C356.718,251.867,351.808,245.601,347.506,240.442z"/> </g>
+                  </svg>
+                </a>
+                <a href="https://t.me/rssfera" class="btn btn-outline-secondary" target="_blank" title="Телеграм">
+                  <svg fill="#FFFFFF" height="16" width="16" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="m446.7 98.6-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1l-236 148.6-101.6-31.8c-22.1-6.9-22.5-22.1 4.6-32.7l397.4-153.1c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
+                </a>
+                <a href="https://www.avito.ru/brands/i7334388" class="btn btn-outline-secondary" target="_blank" title="Avito">
+                  <svg width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.595" cy="5.225" r="3.325" fill="#FFFFFF"></circle>
+                    <circle cx="22.245" cy="7.235" r="7.235" fill="#FFFFFF"></circle>
+                    <circle cx="8.9" cy="18.6" r="8.9" fill="#FFFFFF"></circle>
+                    <circle cx="24.325" cy="21.005" r="5.375" fill="#FFFFFF"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="copyright">2024 © АН РиелтСтройСфера</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/javascripts/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

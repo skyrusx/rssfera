@@ -176,6 +176,8 @@ form {
 .header .realty .all-objects .btn {
   border-radius: unset;
   margin-top: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .subtitle {
@@ -1775,6 +1777,20 @@ ul.list-none, ul.list-none li {
   color: #75b08a;
 }
 
+.useful-links .card-list a {
+  color: #198754;
+  text-decoration: none;
+}
+
+.useful-links .card-list a:hover,
+.useful-links .card-list a:focus {
+  color: #75b08a;
+}
+
+.new-objects .btn-group {
+  margin-bottom: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-brand img {
     width: 100px;
@@ -1833,7 +1849,7 @@ ul.list-none, ul.list-none li {
   }
   
   .header .realty .all-objects .btn {
-    font-size: 36px;
+    font-size: 22px;
   }
   
   .partners-list .partner-item {
